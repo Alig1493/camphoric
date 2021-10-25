@@ -9,7 +9,8 @@ function EventAdminLodging() {
   return (
     <React.Fragment>
       <h1>Lodging</h1>
-      <pre>{JSON.stringify(event, null, 2)}</pre>
+      <h2>event.registration_schema.definitions.accommodations</h2>
+      <pre>{JSON.stringify(event?.registration_schema?.definitions?.accommodations || '', null, 2)}</pre>
     </React.Fragment>
   );
 }
